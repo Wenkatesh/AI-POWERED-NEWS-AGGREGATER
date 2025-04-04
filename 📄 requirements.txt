@@ -1,0 +1,18 @@
+requests
+spacy
+google-generativeai
+langchain
+langchain-google-genai
+textblob
+gTTS
+googletrans==4.0.0-rc1
+
+#After installing, don't forget to download the spaCy model:
+
+python -m spacy download en_core_web_sm
+
+To install all dependencies at once:
+Make sure you're in your project directory (where requirements.txt is located), then run:
+
+pip install -r requirements.txt
+
