@@ -13,7 +13,7 @@ from googletrans import Translator
 import os
 
 # Configure Gemini API (via LangChain)
-GEMINI_API_KEY = "AIzaSyA_4osQoZxBdNdDrZ4RXPkhB8ic"
+GEMINI_API_KEY = "YOUR_API"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Initialize LangChain's Gemini Model
@@ -35,7 +35,7 @@ nlp = spacy.load("en_core_web_sm")
 translator = Translator()
 
 # Mediastack API Key
-MEDIASTACK_API_KEY = "9f9d26568717f598a2e0d60"
+MEDIASTACK_API_KEY = "YOUR_API"
 
 def process_news_content(text):
     """Perform NLP processing: sentiment analysis, NER, and keyword extraction."""
@@ -147,3 +147,4 @@ if st.sidebar.button("Ask AI"):
         st.sidebar.success(ai_response)
     else:
         st.sidebar.warning("Please enter a question.")
+
