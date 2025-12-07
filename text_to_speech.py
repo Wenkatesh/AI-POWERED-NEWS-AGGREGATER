@@ -49,7 +49,7 @@ def text_to_speech(text, filename="news_audio.mp3"):
 
 def get_news(country, category, date):
     """Fetch news using Mediastack API."""
-    MEDIASTACK_API_KEY = "9f9d26568717f598067ae30d5a2e0d60"
+    MEDIASTACK_API_KEY = "YOUR API"
     url = f"http://api.mediastack.com/v1/news?access_key={MEDIASTACK_API_KEY}&countries={country}&categories={category}&date={date}&limit=10"
     response = requests.get(url)
     return response.json().get("data", [])
@@ -97,3 +97,4 @@ if st.sidebar.button("Get News Sentiments & Summaries"):
             
             # Read Full News Link
             st.markdown(f"[Read Full News]({article['url']})")
+
